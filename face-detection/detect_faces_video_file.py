@@ -74,5 +74,7 @@ while fvs.more():
     if key == ord("q"):
         break
 
+print("[INFO] closing windows and cleaning up...")
 cv2.destroyAllWindows()
 fvs.stop()
+print("[INFO] end of program.")
