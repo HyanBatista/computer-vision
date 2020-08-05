@@ -31,7 +31,7 @@ def shape_to_np(shape, dtype="int"):
     return coords
 
 # Defina um dicionário que conecte os índices dos marcos faciais à regiões específicas da face
-FACIAL_LANDMARKS_IDXS = OrderedDict(
+FACIAL_LANDMARKS_IDXS = OrderedDict([
     ("mouth", (48, 68)),
 	("right_eyebrow", (17, 22)),
 	("left_eyebrow", (22, 27)),
@@ -39,7 +39,7 @@ FACIAL_LANDMARKS_IDXS = OrderedDict(
 	("left_eye", (42, 48)),
 	("nose", (27, 35)),
 	("jaw", (0, 17))
-)
+])
 
 def visualize_facial_landmarks(image, shape, colors=None, alpha=0.75):
     """
@@ -54,7 +54,7 @@ def visualize_facial_landmarks(image, shape, colors=None, alpha=0.75):
     output = image.copy()
 
     # Se a lista de cores está vazia (None), inicialize-a com uma cor única para cada região de marcos faciais.
-    if color is None:
+    if colors is None:
         colors = [
             (19, 199, 109), 
             (79, 76, 240), 
@@ -101,7 +101,7 @@ def visualize_facial_landmarks(image, shape, colors=None, alpha=0.75):
         src1=overlay,
         alpha=alpha,    
         src2=output,
-        beta=1 - alpha,
+        beta=(1 - alpha),
         gamma=0,
         dst=output
     )
