@@ -1,14 +1,13 @@
-# computer-vision
+# Computer vision
 
 Abaixo seguem instruções de como executar em seu computador os principais scripts desse repositório. Elas foram escritas supondo que o usuário está usando um sistema operacional unix-based.
 
 DETECÇÃO DE FACES COM OPENCV e CNN
 
-*python detect_faces_video_file.py -p ../res/deploy.prototxt.txt -m ../res/res10_300x300_ssd_iter_140000.caffemodel -v ../res/26122013_223310_cam.avi*
+*python detect_faces_video_file.py -p ../res/deploy.prototxt.txt -m ../res/res10_300x300_ssd_iter_140000.caffemodel -v [file_name]*
 
 Ao executar o comando acima, a seguinte janela aparecerá:
 ![Detecção de faces com OpenCV](/images/detect_faces_video_file_showcase.png)
-Format: ![Alt Text](url)
 
 EYE BLINK DETECTION BASEADO EM FACIAL LANDMARKS
 
@@ -16,4 +15,3 @@ EYE BLINK DETECTION BASEADO EM FACIAL LANDMARKS
 
 Ao inserir esse comando no prompt, o output será algo parecido com isto:
 ![Eye blink detection com dlib](/images/detect_blink_showcase.png)
-Format: ![Alt Text](url)
