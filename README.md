@@ -4,7 +4,7 @@ Abaixo seguem instruções de como executar em seu computador os principais scri
 
 ## DETECÇÃO DE FACES COM OPENCV e CNN
 
-*python detect_faces_video_file.py -p ../res/deploy.prototxt.txt -m ../res/res10_300x300_ssd_iter_140000.caffemodel -v [file_name]*
+*python face-detection/detect_faces_video_file.py -p res/deploy.prototxt.txt -m res/res10_300x300_ssd_iter_140000.caffemodel -v [file_name]*
 
 Ao executar o comando acima, uma janela semelhante a esta aparecerá:<br>
 
@@ -12,7 +12,7 @@ Ao executar o comando acima, uma janela semelhante a esta aparecerá:<br>
 
 ## EYE BLINK DETECTION BASEADO EM FACIAL LANDMARKS
 
-*python detect_blink.py -p ../res/shape_predictor_68_face_landmarks.dat*
+*python facial-landmarks/detect_blink.py -p res/shape_predictor_68_face_landmarks.dat*
 
 Ao inserir esse comando no prompt, o output será algo parecido com isto:<br>
 
